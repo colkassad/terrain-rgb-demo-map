@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='./stylesheets/style.css')
+    link(rel='stylesheet', href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css')
+    script(src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js')
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+  body
+    script(src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js')
+    link(rel='stylesheet', href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css')
+    block content

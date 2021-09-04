@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div(class='sidebar pad2')
+    h1 Tile Information
+    h2 Width in meters:
+    div(id='tile-width', class='info-text')
+    h2 Pixel width in meters (512 x 512 heightmap):
+    div(id='pixel-width', class='info-text')
+    h2 Elevation Min:
+    div(id='elev-min', class='info-text')
+    h2 Elevation Max:
+    div(id='elev-max', class='info-text')
+    h2 Elevation Range:
+    div(id='elev-range', class='info-text')
+    h1 Preview
+    img(id='preview', src="./images/default.png", height=256, width=256)
+    div.input
+        input(id='download', type="submit", name="9-379-214", value="Download Heightmap")
+        input(id='download-slope', type="submit", name="150-9-379-214", value="Download Slope")
+  div(id='map')
+  script
+    include ../public/javascripts/map.js
