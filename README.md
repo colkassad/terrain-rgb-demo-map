@@ -10,7 +10,7 @@ Demo map for [terrain-rgb-height](https://github.com/colkassad/terrain-rgb-heigh
 
 # Getting Started
 * Open public/javascripts/map.js and replace `<your MapBox API Token here>`  with your Mapbox API token
-* Navigate to the terrain-rgb-demo folder
+* Navigate to the terrain-rgb-demo folder: `cd terrain-rgb-demo`
 * Run `npm install` to install dependences
 * Run `npm start` to start the application
 * Navigate to `localhost:3000`
