@@ -1,6 +1,5 @@
-
 //Add your MapBox API Token here
-mapboxgl.accessToken = '';
+mapboxgl.accessToken = '<your MapBox API Token here>';
 
 $('#download').click(function() {
   var splitName = this.name.split("-");
@@ -35,10 +34,20 @@ var map = new mapboxgl.Map({
   doubleClickZoom: false
 });
 
+// Add a geocoder to the map
 map.addControl(new MapboxGeocoder({
   accessToken: mapboxgl.accessToken,
   mapboxgl: mapboxgl
 }));
+
+// Add a scale control to the map
+const scale = new mapboxgl.ScaleControl({
+  maxWidth: 80,
+  unit: 'metric'
+});
+map.addControl(scale);
+   
+scale.setUnit('metric')
 
 map.on('load', function() {
   map.showTileBoundaries = true;
