@@ -1,6 +1,8 @@
 # terrain-rgb-demo-map
 Demo map for [terrain-rgb-height](https://github.com/colkassad/terrain-rgb-height) and [terrain-rgb-slope](https://github.com/colkassad/terrain-rgb-slope) repositories. See it in action [here](http://redshifted.org). These tiles are useful for game engines and game editors. See an example of using it in Unreal Engine [here](https://imgur.com/a/ENsZXHN).
 
+![alt text](https://github.com/colkassad/terrain-rgb-demo-map/blob/main/ui.jpeg?raw=true)
+
 # Prerequisites
 * Nodejs
 * npm
